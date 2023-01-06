@@ -1,6 +1,7 @@
 const db=require('../models');
 const Tutorial=db.tutorials;
 const Op=db.Sequelize.Op;
+const {client}=require('../../redisconnect');
 
 exports.create=(req,res)=>{
     console.log('innn')
@@ -9,6 +10,9 @@ if(!req.body.title){
         message:'content can not be empty'
     });
     return;
+}
+exports.create=(req,res)=>{
+    
 
 }
 
@@ -215,7 +219,7 @@ exports.findAll = (req, res) => {
       });
   };
   
-  // find all published Tutorial
+  //find all published Tutorial
   exports.findAllPublished = (req, res) => {
     const { page, size } = req.query;
     const { limit, offset } = getPagination(page, size);

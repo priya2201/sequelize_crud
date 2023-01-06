@@ -1,5 +1,5 @@
 const Sequelize=require('sequelize');
-const sequelize = new Sequelize('sequelize_video','root','rootpassword',{
+const sequelize = new Sequelize('sequelize_video1','root','smileyarr12',{
     host:'localhost',
     dialect:'mysql',
 })

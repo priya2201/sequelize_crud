@@ -1,7 +1,7 @@
 const dbConfig=require('../config/db.config');
 const Sequelize=require('sequelize');
 // const dbConfig = require('../config/db.config');
-const sequelize = new Sequelize('sequelize_video','root','rootpassword',{
+const sequelize = new Sequelize('sequelize_video1','root','smileyarr12',{
     host:'localhost',
     dialect:'mysql',
     
